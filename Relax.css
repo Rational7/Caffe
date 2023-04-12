@@ -1,0 +1,380 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+.go1{
+    width: 100%;
+    background-image: url('img/Becground – копія – копія.jpg');
+    background: url('img/Becground – копія – копія.jpg') center no-repeat;
+    background: url('img/Becground – копія – копія.jpg') 0 0/cover no-repeat;
+    background-size: 100% auto;
+}
+
+.circle {
+    width: 3.33%;
+    margin: -13.85% 15% 1% 77.92%;
+    position: relative;
+    background-image: url('img/Circle.png');
+    background: url('img/Circle.png') center no-repeat;
+    background: url('img/Circle.png') 0 0/cover no-repeat;
+    background-size: 100% auto;
+    opacity: 0.5;
+
+}
+
+.vint {
+    background-image: url('img/Vint.png');
+    background-size: 100% auto;
+    width: 4%;
+    margin: 5.97% 15% 1% 77.58%;
+    transition: all 0.2s ease s;
+    animation-name: vint;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-delay:0;
+    animation-timing-function:linear;
+    position: relative;
+    transition: none;
+    z-index:1;
+}
+
+@keyframes vint{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+.vint:hover {
+animation-play-state: paused;
+}
+
+
+
+.text1{
+    text-decoration: inherit;
+    position: relative;
+    width: 40%;
+    font-size: 850%;
+    margin: -30.5% 50%;
+    border: 6rem ;
+    font-family: sans-serif;
+    color: #b0b0b0;
+    transform: rotate(-4.9deg);
+    text-shadow: 
+    3px 3px 2px yellow, 
+    0 3px 2px yellow, 
+    -3px 0 2px yellow, 
+    0 -3px 2px yellow;
+    opacity: 1;
+}
+
+.window1 {
+      animation-name: window1;
+      width: 2.5%;
+      transform: rotate(90deg);
+      margin: -9% 1% 13% 16.8%;
+      position: relative;
+      opacity: 0.7;
+        animation-duration: 15s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay:0;
+        animation-timing-function: steps(2);
+
+}
+
+@keyframes window1 {
+  0% {
+      box-shadow: 15px 40px 20px 15px yellow;
+      opacity: 1;
+    }
+  100% {
+      box-shadow: 5px 4px 2px 5px black;
+      opacity: 0;
+    }
+  }
+
+.wind {
+      animation-name: wind;
+    background-image: url('img/Red_radius.png');
+    background: url('img/Red_radius.png') center no-repeat;
+    background: url('img/Red_radius.png') 0 0/cover no-repeat;
+      width: 1.5%;
+      position: relative;
+      margin: -9.5% 1% 13% 26%;
+      border-radius: 360px;
+      transform: skew(-35deg, 40deg);
+
+      opacity: 1;
+        animation-duration: 15s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-delay:0s;
+        animation-timing-function: steps(1);
+
+}
+
+@keyframes wind {
+  0% {
+      box-shadow: 5px 0px 20px 15px red;
+      opacity: 0.7;
+    }
+  45% {      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  100% {      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  }
+
+.yello {
+      animation-name: yello;
+    background: url('img/Yellow_radius.png') center no-repeat;
+    background: url('img/Yellow_radius.png') 0 0/cover no-repeat;
+      width: 1.5%;
+      position: relative;
+      margin: -7.4% 1% 13% -2.8%;
+      border-radius: 60px;
+      transform: skew(-35deg, 40deg);
+
+      opacity: 1;
+        animation-duration: 15s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-delay:0s;
+        animation-timing-function: steps(1);
+
+}
+
+@keyframes yello {
+  0% {
+      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  30% {box-shadow: 5px 0px 20px 15px yellow;
+      opacity: 0.7;
+    }
+  45% {      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  100% {      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  }
+
+
+.gree {
+      animation-name: gree;
+      background: url('img/Green_radius.png') center no-repeat;
+      background: url('img/Green_radius.png') 0 0/cover no-repeat;
+      width: 1.5%;
+      position: relative;
+      margin: -5.2% 1% 13% -2.7%;
+      border-radius: 60px;
+      transform: skew(-35deg, 40deg);
+
+      opacity: 1;
+        animation-duration: 15s;
+        animation-delay:0s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: steps(1);
+        z-index:2;
+}
+
+@keyframes gree {
+  0% {
+      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+      45% {      box-shadow: 5px 0px 20px 30px green;
+      opacity: 0.7;
+    }
+      84% {box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+      88% {      box-shadow: 5px 0px 20px 30px green;
+      opacity: 0.7;
+    }
+      92% {box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+      96% {box-shadow: 5px 0px 20px 30px green;
+      opacity: 0.7;
+          }
+      100% {box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  }
+
+.circle2 {
+    width: 3.8%;
+    margin: 25.4% 15% 1% 24.92%;
+    position: relative;
+    background-image: url('img/Circle_2.png');
+    background: url('img/Circle_2.png') center no-repeat;
+    background: url('img/Circle_2.png') 0 0/cover no-repeat;
+    background-size: 100% auto;
+    opacity: 0.20;
+    z-index:0;
+
+}
+
+.circle3 {
+    width: 10%;
+    margin: 29.9% 15% 1% 31%;
+    position: relative;
+    background-image: url('img/copy_Becground.jpg');
+    background: url('img/copy_Becground.jpg') center no-repeat;
+    background: url('img/copy_Becground.jpg') 0 0/cover no-repeat;
+    background-size: 100% auto;
+    opacity: 1;
+    z-index: 2;
+
+}
+
+.circle4 {
+    width: 1.8%;
+    margin: 26.4% 15% 1% 25.92%;
+    position: relative;
+    background-image: url('img/Circle_2.png');
+    background: url('img/Circle_2.png') center no-repeat;
+    background: url('img/Circle_2.png') 0 0/cover no-repeat;
+    background-size: 100% auto;
+    opacity: 0;
+    z-index:0;
+
+}
+
+.circle5 {
+    width: 3.8%;
+    margin: 2% 15% 1% -14.92%;
+    position: relative;
+    background-image: url('img/Circle_2.png');
+    background: url('img/Circle_2.png') center no-repeat;
+    background: url('img/Circle_2.png') 0 0/cover no-repeat;
+    background-size: 100% auto;
+    opacity: 0.9;
+    z-index:0;
+}
+
+
+
+.man {
+      animation-name: man;
+      background: url('img/Green_radius.png') center no-repeat;
+      background: url('img/Green_radius.png') 0 0/cover no-repeat;
+      width: 0.1%;
+      position: relative;
+      margin: -25.5% 1% 13% 29.7%;
+      border-radius: 60px;
+      transform: skew(-35deg, 40deg);
+
+      opacity: 1;
+        animation-duration: 15s;
+        animation-delay:0s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-timing-function: steps(1);
+        z-index:2;
+}
+
+@keyframes man {
+  0% {
+      box-shadow: 5px 0px 10px 15px black;
+      opacity: 0;
+    }
+      45% {      box-shadow: 5px 0px 15px 30px red;
+      opacity: 0.7;
+    }
+      84% {box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+      88% {      box-shadow: 5px 0px 15px 30px red;
+      opacity: 0.7;
+    }
+      92% {box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+      96% {box-shadow: 5px 0px 15px 30px red;
+      opacity: 0.7;
+          }
+      100% {box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  }
+
+
+.man1 {
+      animation-name: man1;
+    background-image: url('img/Circle_2.png');
+    background: url('img/Circle_2.png') center no-repeat;
+    background: url('img/Circle_2.png') 0 0/cover no-repeat;
+      width: 0.2%;
+      position: relative;
+      margin: -25.5% 1% 13% -1.2%;
+      border-radius: 360px;
+      transform: skew(-35deg, 40deg);
+
+      opacity: 1;
+        animation-duration: 15s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-delay:0s;
+        animation-timing-function: steps(1);
+
+}
+
+@keyframes man1 {
+  0% {
+      box-shadow: 5px 0px 10px 35px green;
+      opacity: 0.7;
+    }
+  45% {      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  100% {      box-shadow: 5px 0px 20px 15px black;
+      opacity: 0;
+    }
+  }
+
+
