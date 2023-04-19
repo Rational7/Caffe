@@ -52,15 +52,15 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
     background: url('img/Circle.png') 0 0/cover no-repeat;
     background-size: 100% auto;
     opacity: 0.5;
-
 }
 
 .vint {
     background-image: url('img/Vint.png');
     background-size: 100% auto;
     width: 4%;
-    margin: 5.97% 15% 1% 77.58%;
+    margin: 5.6% 15% 1% 77.58%;
     transition: all 0.2s ease s;
+    border-radius: 60px;
     animation-name: vint;
     animation-duration: 12s;
     animation-iteration-count: infinite;
@@ -78,7 +78,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 }
 
 .vint:hover {
-animation-play-state: paused;
+      animation-play-state: paused;
+        border: 3px solid;
+        border-color: yellow;
+        border-image: yellow;
 }
 
 
@@ -93,6 +96,9 @@ animation-play-state: paused;
     font-family: sans-serif;
     color: #b0b0b0;
     transform: rotate(-4.9deg);
+}
+
+.text1:hover {
     text-shadow: 
     3px 3px 2px yellow, 
     0 3px 2px yellow, 
@@ -114,6 +120,8 @@ animation-play-state: paused;
         animation-direction: alternate;
         animation-delay:0;
         animation-timing-function: steps(2);
+        border-radius: 60px;
+        border-color: red;
 
 }
 
@@ -127,6 +135,7 @@ animation-play-state: paused;
       opacity: 0;
     }
   }
+
 
 .wind {
       animation-name: wind;
@@ -161,6 +170,11 @@ animation-play-state: paused;
       opacity: 0;
     }
   }
+
+.wind:hover {
+        border: 3px solid;
+        border-color: yellow;
+}
 
 .yello {
       animation-name: yello;
@@ -198,6 +212,10 @@ animation-play-state: paused;
     }
   }
 
+.yello:hover {
+        border: 3px solid;
+        border-color: orange;
+}
 
 .gree {
       animation-name: gree;
@@ -244,6 +262,11 @@ animation-play-state: paused;
     }
   }
 
+.gree:hover {
+        border: 3px solid;
+        border-color: yellow;
+}
+
 .circle2 {
     width: 3.8%;
     margin: 25.4% 15% 1% 24.92%;
@@ -266,9 +289,10 @@ animation-play-state: paused;
     background: url('img/copy_Becground.jpg') 0 0/cover no-repeat;
     background-size: 100% auto;
     opacity: 1;
-    z-index: 2;
+    z-index:2;
 
 }
+
 
 .circle4 {
     width: 1.8%;
@@ -283,6 +307,7 @@ animation-play-state: paused;
 
 }
 
+
 .circle5 {
     width: 3.8%;
     margin: 2% 15% 1% -14.92%;
@@ -292,18 +317,16 @@ animation-play-state: paused;
     background: url('img/Circle_2.png') 0 0/cover no-repeat;
     background-size: 100% auto;
     opacity: 0.9;
-    z-index:0;
 }
-
 
 
 .man {
       animation-name: man;
-      background: url('img/Green_radius.png') center no-repeat;
-      background: url('img/Green_radius.png') 0 0/cover no-repeat;
-      width: 0.1%;
+      background: url('img/Red_radius.png') center no-repeat;
+      background: url('img/Red_radius.png') 0 0/cover no-repeat;
+      width: 2.1%;
       position: relative;
-      margin: -25.5% 1% 13% 29.7%;
+      margin: -26% 1% 13% 28.7%;
       border-radius: 60px;
       transform: skew(-35deg, 40deg);
 
@@ -314,7 +337,7 @@ animation-play-state: paused;
         animation-iteration-count: infinite;
         animation-direction: normal;
         animation-timing-function: steps(1);
-        z-index:2;
+        z-index: 2;
 }
 
 @keyframes man {
@@ -342,16 +365,20 @@ animation-play-state: paused;
     }
   }
 
+.man:hover {
+        border: 3px solid;
+        border-color: yellow;
+}
 
 .man1 {
       animation-name: man1;
-    background-image: url('img/Circle_2.png');
-    background: url('img/Circle_2.png') center no-repeat;
-    background: url('img/Circle_2.png') 0 0/cover no-repeat;
-      width: 0.2%;
+    background-image: url('img/Green_radius.png');
+    background: url('img/Green_radius.png') center no-repeat;
+    background: url('img/Green_radius.png') 0 0/cover no-repeat;
+      width: 2.1%;
       position: relative;
-      margin: -25.5% 1% 13% -1.2%;
-      border-radius: 360px;
+      margin: -26% 1% 13% -3.2%;
+      border-radius: 60px;
       transform: skew(-35deg, 40deg);
 
       opacity: 1;
@@ -377,4 +404,25 @@ animation-play-state: paused;
     }
   }
 
+.man1:hover {
+        border: 3px solid;
+        border-color: yellow;
+}
 
+.man2 {
+      animation-name: man2;
+    background-image: url('img/Blue_rectangle.png');
+    background: url('img/Blue_rectangle.png') center no-repeat;
+    background: url('img/Blue_rectangle.png') 0 0/cover no-repeat;
+      width: 4.7%;
+      position: relative;
+      margin: -30.8% 1% 13% -18.1%;
+      transform: rotate(90deg) skew(-9deg, 0deg);
+
+      opacity: 0.5;
+}
+
+.man2:hover {
+        border: 3px solid;
+        border-color: yellow;
+}
